@@ -1,0 +1,5 @@
+[[tests]]
+name = "a -> n"
+input = ["./$project", "a"]
+expected = "n"
+rubric = 10
