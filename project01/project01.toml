@@ -68,11 +68,11 @@ bits of entropy: 41
 rubric = 10
 
 [[tests]]
-name = "frisco1"
-input = ["./$project", "350f87acbed079c76f818e04a5e190e2247208cfdf5eb25c97006cc30f6b12af"]
+name = "CowPencilTruck"
+input = ["./$project", "95817f9a13435ae28a022203048e89b84d03cedede6cd794e34b5e6af8af4c08"]
 expected = """
-frisco1
-bits of entropy: 36
+CowPencilTruck
+bits of entropy: 79
 """
 rubric = 10
 
