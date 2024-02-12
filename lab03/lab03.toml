@@ -1,0 +1,50 @@
+[[tests]]
+name = "build"
+input = ["./$project"]
+#output = "dict.txt"
+expected = "dictionary built"
+rubric = 30
+
+[[tests]]
+name = "exists"
+input = ["./$project"]
+#output = "lab03.csv"
+expected = "dictionary exists"
+rubric = 10
+
+[[tests]]
+name = "password"
+input = ["./$project", "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"]
+expected = "password"
+rubric = 10
+
+[[tests]]
+name = "123456789"
+input = ["./$project", "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225"]
+expected = "123456789"
+rubric = 10
+
+[[tests]]
+name = "niners"
+input = ["./$project", "84f081273670181b0d00600d4972de62686806e8e98e14fd423dd3ad6f9e0f5b"]
+expected = "niners"
+rubric = 10
+
+[[tests]]
+name = "n!n3r$"
+input = ["./$project", "7e016a27dae18f63bb89e1455273332e4eab64a5308575ab9494dc78f06960bc"]
+expected = "n!n3r$"
+rubric = 10
+
+[[tests]]
+name = "niners1"
+input = ["./$project", "ef60a458e0016857ade43406a7cfd256a904f8becd75c660b19ac72831f502d6"]
+expected = "niners1"
+rubric = 10
+
+[[tests]]
+name = "not-found"
+input = ["./$project", "c9e100f0214a368bc599534b9d25877699aba73adb3b8691f2021de9eddf96c9"]
+expected = "not found"
+rubric = 10
+
