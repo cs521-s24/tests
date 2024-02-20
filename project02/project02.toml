@@ -6,7 +6,7 @@ $project_tests/0/0.txt
 $project_tests/0/1/1.txt
 $project_tests/0/1/2/2.txt
 """
-rubric = 10
+rubric = 13
 
 [[tests]]
 name = "hidden"
@@ -17,21 +17,37 @@ $project_tests/0/1/1.txt
 $project_tests/0/1/2/2.txt
 $project_tests/0/.0.txt
 """
-rubric = 10
+rubric = 13
 
 [[tests]]
 name = "recursion"
 input = ["./$project", "-d", "$project_tests/0"]
 expected = """
-$project_tests/0/1/2/
-$project_tests/0/1/
+$project_tests/0/1/2
+$project_tests/0/1
 """
-rubric = 10
+rubric = 13
 
 [[tests]]
 name = "limit"
 input = ["./$project", "-dl", "1", "$project_tests/0"]
 expected = """
-$project_tests/0/1/
+$project_tests/0/1
 """
-rubric = 10
+rubric = 13
+
+[[tests]]
+name = "exact"
+input = ["./$project", "-e", "$project_tests/", "0"]
+expected = """
+$project_tests/0
+"""
+rubric = 13
+
+[[tests]]
+name = "contents"
+input = ["./$project", "-c", "foo", "$project_tests/"]
+expected = """
+$project_tests/0/0.txt
+"""
+rubric = 15
