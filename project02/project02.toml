@@ -12,10 +12,10 @@ rubric = 13
 name = "hidden"
 input = ["./$project", "-fh", "$project_tests/0"]
 expected = """
+$project_tests/0/.0.txt
 $project_tests/0/0.txt
 $project_tests/0/1/1.txt
 $project_tests/0/1/2/2.txt
-$project_tests/0/.0.txt
 """
 rubric = 13
 
