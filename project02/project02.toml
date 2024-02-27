@@ -46,7 +46,7 @@ rubric = 13
 
 [[tests]]
 name = "contents"
-input = ["./$project", "-c", "foo", "$project_tests/"]
+input = ["./$project", "-c", "foo", "$project_tests/0"]
 expected = """
 $project_tests/0/0.txt
 """
