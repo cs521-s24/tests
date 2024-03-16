@@ -1,0 +1,48 @@
+[[tests]]
+name = "test1"
+input = ["./rarray", "1"]
+expected = """
+cap: 0
+size: 0
+"""
+rubric = 10
+
+[[tests]]
+name = "test2"
+input = ["./rarray", "2", "1", "2", "3"]
+expected = """
+size: 3
+1
+2
+3
+"""
+rubric = 10
+
+[[tests]]
+name = "test3"
+input = ["./rarray", "3", "100", "200", "300"]
+expected = """
+100
+"""
+rubric = 10
+
+[[tests]]
+name = "test4"
+input = ["./rarray", "4", "2", "4", "6", "8"]
+expected = """
+4
+6
+8
+"""
+rubric = 10
+
+[[tests]]
+name = "test5"
+input = ["./rarray", "5", "1", "3", "2", "4"]
+expected = """
+4
+3
+2
+1
+"""
+rubric = 10
