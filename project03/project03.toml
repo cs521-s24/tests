@@ -46,3 +46,32 @@ expected = """
 1
 """
 rubric = 10
+
+[[tests]]
+name = "path_only"
+input = ["./$project", "$project_tests/0"]
+expected = """
+$project_tests/0/0.txt 12
+$project_tests/0/1/2/2.txt 39
+$project_tests/0/1/1.txt 1251
+"""
+rubric = 20
+
+[[tests]]
+name = "sorted"
+input = ["./$project", "-s", "$project_tests/0"]
+expected = """
+$project_tests/0/1/1.txt 1251
+$project_tests/0/1/2/2.txt 39
+$project_tests/0/0.txt 12
+"""
+rubric = 15
+
+[[tests]]
+name = "limit"
+input = ["./$project", "-s", "-l", "1", "$project_tests/0"]
+expected = """
+$project_tests/0/1/1.txt 1251
+"""
+rubric = 15
+
