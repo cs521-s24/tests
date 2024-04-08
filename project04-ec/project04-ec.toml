@@ -1,0 +1,29 @@
+[[tests]]
+name = "simple"
+input = ['./project04', '-f', '$project_tests/simple.txt']
+rubric = 1
+expected = '0x0000000A'
+
+[[tests]]
+name = "expressions"
+input = ['./project04', '-f', '$project_tests/expressions.txt']
+rubric = 1
+expected = '0x0000000A'
+
+[[tests]]
+name = "variables"
+input = ['./project04', '-f', '$project_tests/variables.txt']
+rubric = 1
+expected = '0x0000000A'
+
+[[tests]]
+name = "bigger"
+input = ['./project04', '-f', '$project_tests/bigger.txt']
+rubric = 1
+expected = '0x0000000A'
+
+[[tests]]
+name = "biggest"
+input = ['./project04', '-f', '$project_tests/biggest.txt']
+rubric = 1
+expected = '0b00000000000010100000000000001010'

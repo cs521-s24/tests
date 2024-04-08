@@ -1,0 +1,4 @@
+x = 2
+y = 8
+base = 16
+print(x + y, base)
