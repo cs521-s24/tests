@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-pkill lab08;  echo "stopped" > stopped.tmp
+pkill lab07;  echo "stopped" > stopped.tmp
